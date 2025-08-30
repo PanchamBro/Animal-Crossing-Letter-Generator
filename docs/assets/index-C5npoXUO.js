@@ -23034,7 +23034,7 @@ function Editor({ cardType, shareMode = false, startText = DEFAULT_START_TEXT, m
         navigate("/");
       } }),
       !shareMode && /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { label: "Share in a Bottle", onClick: () => {
-        if (confirm("Are you sure you want to share this letter as a message in a bottle? It will be available for anyone who clicks the bottle in the bottom of the screen to see, so make sure it is appropriate and doesn't contain any personal information!")) {
+        if (confirm("Are you sure you want to share this letter with the entire world?\nIt will be available for anyone who clicks the bottle in the bottom of the screen to see, so make sure it is appropriate and doesn't contain any personal information!")) {
           const cardElement = document.querySelector(".card");
           if (cardElement instanceof HTMLElement) {
             const startText2 = cardElement.querySelector(".card-start")?.textContent ?? "";
@@ -23172,4 +23172,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-D-H5tlUw.js.map
+//# sourceMappingURL=index-C5npoXUO.js.map
