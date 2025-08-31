@@ -7,7 +7,7 @@ export default function Introduction() {
       <PageTitle title="Animal Crossing Letter Generator" />
       <DialogueOverlay
         name="Tom Nook"
-        message="Welcome to the stationary station, for all of your letter writing needs! Pick a letter template to get started."
+        message="Welcome to the stationery station, for all of your letter writing needs! Pick a letter template to get started."
         linkTo="/library"
       />
     </>

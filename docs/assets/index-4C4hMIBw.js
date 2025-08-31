@@ -14273,7 +14273,7 @@ function Introduction() {
       DialogueOverlay,
       {
         name: "Tom Nook",
-        message: "Welcome to the stationary station, for all of your letter writing needs! Pick a letter template to get started.",
+        message: "Welcome to the stationery station, for all of your letter writing needs! Pick a letter template to get started.",
         linkTo: "/library"
       }
     )
@@ -23172,4 +23172,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-CMefM-h3.js.map
+//# sourceMappingURL=index-4C4hMIBw.js.map
