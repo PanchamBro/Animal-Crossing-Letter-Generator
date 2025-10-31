@@ -43,6 +43,12 @@ export const CardName = {
   MothersDay: "Mother's Day",
   FluffyClouds: "Fluffy-Clouds",
   Beach: "Beach",
+  TurkeyDay: "Turkey-Day",
+  Pumpkin: "Pumpkin",
+  Halloween: "Halloween",
+  Mushroom: "Mushroom",
+  CarpetOfLeaves: "Carpet-Of-Leaves",
+  Acorn: "Acorn",
 } as const;
 
 export type CardName = typeof CardName[keyof typeof CardName];
@@ -113,13 +119,13 @@ export const HOLIDAYS = {
     name: "Thanksgiving",
     start: { month: 9, day: 16 },
     end: { month: 11, day: 30 },
-    cards: []
+    cards: [CardName.TurkeyDay]
   },
   Halloween: {
     name: "Halloween",
     start: { month: 10, day: 1 },
     end: { month: 10, day: 31 },
-    cards: []
+    cards: [CardName.Halloween, CardName.Pumpkin]
   },
   Christmas: {
     name: "Christmas",
@@ -143,7 +149,7 @@ export const HOLIDAYS = {
     name: "Fall",
     start: { month: 9, day: 1 },
     end: { month: 11, day: 25 },
-    cards: []
+    cards: [CardName.Acorn, CardName.Mushroom, CardName.CarpetOfLeaves]
   },
   Winter: {
     name: "Winter",

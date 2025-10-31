@@ -356,6 +356,13 @@
 	transition: opacity 0.1s ease-in-out;
 }
 
+.acorn-card {
+	background-image: url("/assets/Acorn_Card_NH-DXrEK4z2.png");
+	--card-start-color: #fff6d0;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
 .airmail-card {
 	background-image: url("/assets/Airmail_Card_NH-1dM8mJIN.png");
 }
@@ -405,6 +412,13 @@
 
 .bunny-day-card {
 	background-image: url("/assets/Bunny_Day_Card_NH-C_G9uHDf.png");
+}
+
+.carpet-of-leaves-card {
+	background-image: url("/assets/Carpet-Of-Leaves_Card_NH-Uijiu1Di.png");
+	--card-start-color: #ffecc0;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
 }
 
 .camo-card {
@@ -537,6 +551,13 @@
 	--card-signature-color: var(--card-start-color);
 }
 
+.halloween-card {
+	background-image: url("/assets/Halloween_Card_NH-ASVHahMe.png");
+	--card-start-color: #fed04b;
+	--card-message-color: #fe9e34;
+	--card-signature-color: #fdd347;
+}
+
 .happy-clovers-card {
 	background-image: url("/assets/Happy-Clovers_Card_NH-CJL_zMK4.png");
 	--card-start-color: #6a441b;
@@ -560,6 +581,20 @@
 
 .mothers-day-card {
 	background-image: url("/assets/Mothers_Day_Card_NH-DEmT-mRB.png");
+}
+
+.mushroom-card {
+	background-image: url("/assets/Mushroom_Card_NH-BXD6zGwN.png");
+	--card-start-color: #f9f2da;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.pumpkin-card {
+	background-image: url("/assets/Pumpkin_Card_NH-DsdgQBJY.png");
+	--card-start-color: #faf9de;
+	--card-message-color: #fce26b;
+	--card-signature-color: var(--card-start-color);
 }
 
 .red-dragonflies-card {
@@ -615,6 +650,13 @@
 	background-image: url("/assets/Torn_Card_NH-acW5lIT3.png");
 	--card-start-color: #717171;
 	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.turkey-day-card {
+	background-image: url("/assets/Turkey_Day_Card_NH--mfO8FX3.png");
+	--card-start-color: #b34b00;
+	--card-message-color: #7a1d00;
 	--card-signature-color: var(--card-start-color);
 }
 

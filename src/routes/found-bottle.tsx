@@ -26,7 +26,7 @@ export default function FoundBottle() {
     <>
       <PageTitle title="Found Message in a Bottle!" />
       <DialogueOverlay
-        name="Tom Nook"
+        name="Idrees"
         message="Looks like a message in a bottle washed ashore, shared by a random stranger across the world! Let's open it up!"
         linkTo={getRandomBottle()}
       />

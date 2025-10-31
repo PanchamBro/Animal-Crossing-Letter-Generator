@@ -159,6 +159,13 @@
 	transition: opacity 0.1s ease-in-out;
 }
 
+.acorn-card {
+	background-image: url("./backgrounds/Acorn_Card_NH.png");
+	--card-start-color: #fff6d0;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
 .airmail-card {
 	background-image: url("./backgrounds/Airmail_Card_NH.png");
 }
@@ -208,6 +215,13 @@
 
 .bunny-day-card {
 	background-image: url("./backgrounds/Bunny_Day_Card_NH.png");
+}
+
+.carpet-of-leaves-card {
+	background-image: url("./backgrounds/Carpet-Of-Leaves_Card_NH.png");
+	--card-start-color: #ffecc0;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
 }
 
 .camo-card {
@@ -340,6 +354,13 @@
 	--card-signature-color: var(--card-start-color);
 }
 
+.halloween-card {
+	background-image: url("./backgrounds/Halloween_Card_NH.png");
+	--card-start-color: #fed04b;
+	--card-message-color: #fe9e34;
+	--card-signature-color: #fdd347;
+}
+
 .happy-clovers-card {
 	background-image: url("./backgrounds/Happy-Clovers_Card_NH.png");
 	--card-start-color: #6a441b;
@@ -363,6 +384,20 @@
 
 .mothers-day-card {
 	background-image: url("./backgrounds/Mothers_Day_Card_NH.png");
+}
+
+.mushroom-card {
+	background-image: url("./backgrounds/Mushroom_Card_NH.png");
+	--card-start-color: #f9f2da;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.pumpkin-card {
+	background-image: url("./backgrounds/Pumpkin_Card_NH.png");
+	--card-start-color: #faf9de;
+	--card-message-color: #fce26b;
+	--card-signature-color: var(--card-start-color);
 }
 
 .red-dragonflies-card {
@@ -418,6 +453,13 @@
 	background-image: url("./backgrounds/Torn_Card_NH.png");
 	--card-start-color: #717171;
 	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.turkey-day-card {
+	background-image: url("./backgrounds/Turkey_Day_Card_NH.png");
+	--card-start-color: #b34b00;
+	--card-message-color: #7a1d00;
 	--card-signature-color: var(--card-start-color);
 }
 

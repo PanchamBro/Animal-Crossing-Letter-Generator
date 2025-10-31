@@ -6,7 +6,7 @@ export default function SentBottle() {
     <>
       <PageTitle title="Sent Message in a Bottle!" />
       <DialogueOverlay
-        name="Tom Nook"
+        name="Idrees"
         message="Your bottle has been sent away! Hopefully it will reach someone special across the world!"
         linkTo={"/library"}
       />
