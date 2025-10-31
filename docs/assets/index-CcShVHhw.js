@@ -14635,12 +14635,16 @@ function Footer() {
     ] })
   ] });
 }
+function FloatingButton() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "https://discord.gg/6yxE9prcNc", target: "_blank", rel: "noopener noreferrer", className: "floating-button" });
+}
 function Library() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(PageTitle, { title: "Animal Crossing Letter Selection" }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { paddingTop: "30px" }, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(CardSelection, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {})
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(FloatingButton, {})
     ] })
   ] });
 }
@@ -23179,4 +23183,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-DscfVizT.js.map
+//# sourceMappingURL=index-CcShVHhw.js.map
