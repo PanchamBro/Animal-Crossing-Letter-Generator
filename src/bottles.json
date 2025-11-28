@@ -1280,6 +1280,41 @@
       "start": "Dear Villager,",
       "message": "We'ŕe her to contact you about your cars warranty.",
       "signature": "From Your Friend"
+    },
+    {
+      "time": 1762410013881,
+      "card": "Airmail",
+      "start": "Dear Some stranger,",
+      "message": "Selling turnips each Sunday since 2014!!!",
+      "signature": "Someone"
+    },
+    {
+      "time": 1762603238268,
+      "card": "Mushroom",
+      "start": "Dear Villager,",
+      "message": "You may not be in the best part of life right now, but you can keep moving forward and things can and will get better, even if its not in the ways you expect! Keep going, I believe in you.",
+      "signature": "From Your Friend"
+    },
+    {
+      "time": 1762623083930,
+      "card": "Torn",
+      "start": "Dear Villager,",
+      "message": "You are doing great!",
+      "signature": "From the Lion Isles Representative"
+    },
+    {
+      "time": 1762938415921,
+      "card": "So-Many-Hearts",
+      "start": "Dear Villager,",
+      "message": "hey i miss u",
+      "signature": "From Your Friend"
+    },
+    {
+      "time": 1764349306032,
+      "card": "Blue-Sky",
+      "start": "Dear Friend,",
+      "message": "There are so many things I wish I had the chance to tell you but I guess it's too late now. I wish you nothing but the best in your next life, filled with the love and warmth you deserved during this lifetime. I'll be thinking of you, always.",
+      "signature": "Rest Peacefully Friend"
     }
   ]
 }
