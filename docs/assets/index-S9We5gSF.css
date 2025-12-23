@@ -1,0 +1,990 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Varela+Round&display=swap');
+
+.dialogue-page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.dialogue-holder {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	z-index: 4;
+}
+
+.dialogue {
+	position: relative;
+	display: flex;
+	max-height: 50%;
+	min-height: 300px;
+	width: 1000px;
+	cursor: pointer;
+	z-index: 4;
+}
+
+.dialogue-blobs {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: stretch;
+	filter: url("#fancy-goo");
+	transform: scale(0);
+	animation: scale-up 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s 1 normal forwards;
+}
+
+.dialogue-blob-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 75%;
+	background-color: #fdf8e3;
+	border-radius: 40% 40% 30% 30% / 150% 150% 150% 150%;
+	animation: blob 1.5s cubic-bezier(0.37, 0, 0.63, 1) 0.3s infinite alternate;
+	transform-origin: center;
+}
+
+.dialogue-blob-bottom {
+	position: absolute;
+	bottom: 0;
+	width: 94%;
+	height: 40%;
+	background-color: #fdf8e3;
+	border-radius: 5% 5% 20% 20% / 100% 100% 100% 100%;
+	animation: blob 1s infinite alternate cubic-bezier(0.37, 0, 0.63, 1);
+	transform-origin: center;
+}
+
+.dialogue-character-wrap {
+	position: absolute;
+	animation: character 0.6s infinite alternate cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.dialogue-character {
+	display: inline-block;
+	margin-right: auto;
+	padding: 0.5rem 2rem;
+	padding-top: 0.65rem;
+	font-family: "Varela Round", sans-serif;
+	font-size: 2rem;
+	color: #482016;
+	background-color: #dd8530;
+	border-radius: 30% / 100% 100% 120% 120%;
+	transform: perspective(2rem) rotateX(1deg) rotateZ(-9deg) translateX(20%) translateY(-45%) scale(0);
+	animation: fade-character 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.75s 1 normal forwards;
+}
+
+.dialogue-text {
+	position: absolute;
+    width: 100%;
+	box-sizing: border-box;
+	padding: 1em 1em 2em 1.5em;
+	font-family: "Hind", sans-serif;
+	font-size: 3rem;
+	line-height: 1.5em;
+	color: #807256;
+	white-space: pre-wrap;
+}
+
+.arrow {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	opacity: 0;
+	animation: arrow 0.6s cubic-bezier(0.37, 0, 0.63, 1) 1s infinite alternate;
+}
+
+.hide {
+	position: absolute;
+}
+
+@keyframes blob {
+	from {
+		transform: rotate(0.3deg) scale(1);
+	}
+	to {
+		transform: rotate(-0.3deg) scale(0.99);
+	}
+}
+
+@keyframes character {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(3px);
+	}
+}
+
+@keyframes scale-up {
+	0% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	49% {
+	}
+	50% {
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-character {
+	from {
+		transform: perspective(2rem) rotateX(1deg) rotateZ(0deg) translateX(20%) translateY(-45%) scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: perspective(2rem) rotateX(1deg) rotateZ(-6deg) translateX(20%) translateY(-45%) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes arrow {
+	from {
+		transform: translateY(33%) translateX(-50%) scale(1);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(50%) translateX(-50%) scale(0.9);
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+	.dialogue {
+		min-height: 460px;
+	}
+
+	.dialogue-character {
+		font-size: 3rem;
+	}
+
+	.dialogue-text {
+		font-size: 3.8rem;
+	}
+}.mailbox-holder {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mailbox {
+	max-width: 1600px;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+	.mailbox {
+		--card-scale: 0.3;
+	}
+}.card-tilt:nth-child(even) {
+	transform: rotate(-2deg);
+
+}
+
+.card-tilt:nth-child(odd) {
+	transform: rotate(2deg);
+
+}
+
+:root {
+	--card-horizontal-padding: 9%;
+	--card-vertical-padding: 9.1%;
+	--card-scale: 0.35;
+	--card-start-color: #010101;
+	--card-message-color: #010101;
+	--card-signature-color: #010101;
+}
+
+.card {
+	width: calc(1180px * var(--card-scale));
+	height: calc(748px * var(--card-scale));
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: drop-shadow(0 10px 6px rgba(0, 0, 0, 0.15));
+	margin: 15px;
+	box-sizing: border-box;
+	font-family: "Seurat Pro B", "Varela Round", sans-serif;
+	font-size: calc(36px * var(--card-scale));
+	letter-spacing: calc(3.5px * var(--card-scale));
+	line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	will-change: transform;
+}
+
+.card-overlay-label {
+	position: absolute;
+	z-index: 2;
+	font-size: calc(50px * var(--card-scale));
+	color: #fff;
+	background-color: #f49802;
+	padding: calc(8px * var(--card-scale)) calc(40px * var(--card-scale));
+	padding-bottom: calc(4px * var(--card-scale));
+	border-radius: calc(30px * var(--card-scale));
+}
+
+.card-limited-label {
+	top: calc(20px * var(--card-scale));
+	left: calc(-10px * var(--card-scale));
+	transform: rotate(-4deg);
+}
+
+.card-until-label {
+	bottom: calc(20px * var(--card-scale));
+	right: calc(-10px * var(--card-scale));
+	transform: rotate(-4deg);
+}
+
+.card-zoomable {
+	transition-duration: 0.15s;
+	cursor: pointer;
+}
+
+.card-zoomable:hover {
+	transform: scale(1.15);
+	filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.3));
+	transition-duration: 0.15s;
+	z-index: 2;
+}
+
+.card-start,
+.card-signature {
+	padding: var(--card-background-padding);
+	padding-top: calc(var(--card-background-padding) / 3);
+	padding-bottom: calc(var(--card-background-padding) / 3);
+	z-index: 2;
+}
+
+.card-start,
+.card-signature {
+	line-height: 1.2;
+	padding: 2.1%;
+	padding-top: 0.8%;
+	padding-bottom: 0.8%;
+}
+
+.card-start {
+	position: absolute;
+	top: var(--card-vertical-padding);
+	left: var(--card-horizontal-padding);
+	color: var(--card-start-color);
+	margin-left: calc(var(--card-background-padding) * -1);
+}
+
+.card-message-container {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding-left: 14%;
+	padding-right: 13%;
+	flex-grow: 1;
+	box-sizing: border-box;
+}
+
+.card-message-inner-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	word-break: break-word;
+	/* Padding for the canvas background */
+	padding: 3.8%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.card-message {
+	color: var(--card-message-color);
+	max-width: 100%;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+	max-height: 6lh;
+	overflow: scroll;
+	scrollbar-width: none;
+}
+
+.card-signature {
+	position: absolute;
+	text-align: right;
+	bottom: var(--card-vertical-padding);
+	right: var(--card-horizontal-padding);
+	color: var(--card-signature-color);
+	margin-right: calc(var(--card-background-padding) * -1);
+}
+
+.card-label {
+	font-size: 14px;
+	color: #fffeee;
+	text-shadow: none;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%) translateY(50%);
+	opacity: 0;
+	background: #4ebcb1;
+	padding: 10px;
+	border-radius: 100px;
+}
+
+.card:hover .card-label {
+	opacity: 95%;
+	transition: opacity 0.1s ease-in-out;
+}
+
+.acorn-card {
+	background-image: url("/assets/Acorn_Card_NH-BtnFimR_.webp");
+	--card-start-color: #fff6d0;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.airmail-card {
+	background-image: url("/assets/Airmail_Card_NH-CMnxUQMn.webp");
+}
+
+.baby-goods-card {
+	--card-horizontal-padding: 13%;
+	background-image: url("/assets/Baby-Goods_Card_NH-Dlqk87q3.webp");
+	--card-start-color: #69544e;
+	--card-message-color: #66bdca;
+	--card-signature-color: var(--card-start-color);
+}
+
+.balloons-card {
+	background-image: url("/assets/Balloons_Card_NH-BnVUeee1.webp");
+	--card-start-color: #da8528;
+	--card-message-color: #64553b;
+	--card-signature-color: var(--card-start-color);
+}
+
+.bandage-card {
+	background-image: url("/assets/Bandage_Card_NH-12vxMj97.webp");
+	--card-start-color: #fbffff;
+	--card-message-color: #1173a3;
+	--card-signature-color: var(--card-start-color);
+}
+
+.beach-card {
+	background-image: url("/assets/Beach_Card_NH-D1hl2VPN.webp");
+	--card-start-color: #843800;
+	--card-message-color: #a55100;
+	--card-signature-color: var(--card-start-color);
+}
+
+.birthday-cake-card {
+	background-image: url("/assets/Birthday-Cake_Card_NH-D2t9Ruwg.webp");
+	--card-start-color: #533d15;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.blue-sky-card {
+	background-image: url("/assets/Blue-Sky_Card_NH-RyOIEhZr.webp");
+	--card-start-color: #a8ecff;
+	--card-message-color: #d7f8ff;
+	--card-signature-color: var(--card-start-color);
+}
+
+.bunny-day-card {
+	background-image: url("/assets/Bunny_Day_Card_NH-DR5bS2Xr.webp");
+}
+
+.carpet-of-leaves-card {
+	background-image: url("/assets/Carpet-Of-Leaves_Card_NH-AX1MMqlH.webp");
+	--card-start-color: #ffecc0;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.camo-card {
+	background-image: url("/assets/Camo_Card_NH-DVIQRFo6.webp");
+	--card-start-color: #e8e280;
+	--card-message-color: #fff3ce;
+	--card-signature-color: var(--card-start-color);
+}
+
+.cherry-blossoms-card {
+	background-image: url("/assets/Cherry-Blossoms_Card_NH-Do4bLwLJ.webp");
+}
+
+.fluffy-clouds-card {
+	background-image: url("/assets/Fluffy-Clouds_Card_NH-BkCXEPjA.webp");
+	--card-start-color: #313953;
+	--card-message-color: #0b509e;
+	--card-signature-color: #fbfdff;
+
+}
+
+.cool-cool-card {
+	background-image: url("/assets/Cool-Cool_Card_NH-BFEww7gr.webp");
+	--card-start-color: #dedede;
+	--card-message-color: #afafaf;
+	--card-signature-color: var(--card-start-color);
+
+}
+
+.common-card {
+	background-image: url("/assets/Common_Card_NH-DRnK7p11.webp");
+	--card-start-color: #806059;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.dandelion-card {
+	background-image: url("/assets/Dandelion_Card_NH-DFgeZLIW.webp");
+}
+
+.dawning-year-card {
+	background-image: url("/assets/Dawning-Year_Card_NH-DjKjU4Bn.webp");
+	--card-start-color: #382d20;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.decorative-card {
+	background-image: url("/assets/Decorative_Card_NH-D2t_08Fg.webp");
+	--card-start-color: #ffffc5;
+	--card-message-color: #ac441a;
+	--card-signature-color: var(--card-start-color);
+}
+
+.elegant-roses-card {
+	background-image: url("/assets/Elegant-Roses_Card_NH-37TMH-cO.webp");
+	--card-start-color: #ebd989;
+	--card-message-color: #f0dbb1;
+	--card-signature-color: var(--card-start-color);
+}
+
+.fanciful-card {
+	background-image: url("/assets/Fanciful_Card_NH-DI_VYIVx.webp");
+	--card-start-color: #ffe2d4;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.fantasy-stars-card {
+	background-image: url("/assets/Fantasy-Stars_Card_NH-B98v90IB.webp");
+	--card-start-color: #ea61dd;
+	--card-message-color: #6733e5;
+	--card-signature-color: #fe973d;
+}
+
+.fathers-day-card {
+	background-image: url("/assets/Fathers_Day_Card_NH-BQhneL3d.webp");
+}
+
+.fireworks-card {
+	background-image: url("/assets/Fireworks_Card_NH--cKwJs3Z.webp");
+	--card-start-color: #ffbaf4;
+	--card-message-color: #c9a3ff;
+	--card-signature-color: #92a7f7;
+}
+
+.flower-bouquet-card {
+	background-image: url("/assets/Flower-Bouquet_Card_NH-Co-9MrpC.webp");
+	--card-start-color: #673d2c;
+	--card-message-color: #933102;
+	--card-signature-color: var(--card-start-color);
+}
+
+.full-bloom-card {
+	background-image: url("/assets/Full-Bloom_Card_NH-CE0OzOMs.webp");
+}
+
+.gears-card {
+	background-image: url("/assets/Gears_Card_NH-D1igKcqK.webp");
+	--card-start-color: #fdfcff;
+	--card-message-color: #8de7de;
+	--card-signature-color: var(--card-start-color);
+}
+
+.gem-card {
+	background-image: url("/assets/Gem_Card_NH-BDwrGK_b.webp");
+	--card-start-color: #2d7f86;
+	--card-message-color: #398470;
+	--card-signature-color: var(--card-start-color);
+}
+
+.goldfish-card {
+	background-image: url("/assets/Goldfish_Card_NH-DBNs7cIy.webp");
+	--card-start-color: #44483e;
+	--card-message-color: #2d7895;
+	--card-signature-color: var(--card-start-color);
+}
+
+.graduation-card {
+	background-image: url("/assets/Graduation_Card_NH-DBaVAUqH.webp");
+	--card-start-color: #fffeff;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.graffiti-card {
+	background-image: url("/assets/Graffiti_Card_NH-IgInpGrB.webp");
+	--card-start-color: #18f6e4;
+	--card-message-color: #f4f72d;
+	--card-signature-color: var(--card-start-color);
+}
+
+.halloween-card {
+	background-image: url("/assets/Halloween_Card_NH-CM7fmiDl.webp");
+	--card-start-color: #fed04b;
+	--card-message-color: #fe9e34;
+	--card-signature-color: #fdd347;
+}
+
+.happy-clovers-card {
+	background-image: url("/assets/Happy-Clovers_Card_NH-D8rJnlAs.webp");
+	--card-start-color: #6a441b;
+	--card-message-color: #1a4a00;
+	--card-signature-color: var(--card-start-color);
+}
+
+.hibiscus-card {
+	background-image: url("/assets/Hibiscus_Card_NH-CzAhJYmv.webp");
+	--card-start-color: #d90b7c;
+	--card-message-color: #188da0;
+	--card-signature-color: var(--card-start-color);
+}
+
+.lovely-hearts-card {
+	background-image: url("/assets/Lovely_Hearts_Card_NH-BDEnYhue.webp");
+	--card-start-color: #f29e9f;
+	--card-message-color: #d15c64;
+	--card-signature-color: var(--card-start-color);
+}
+
+.mothers-day-card {
+	background-image: url("/assets/Mothers_Day_Card_NH-BtVEPPl1.webp");
+}
+
+.mushroom-card {
+	background-image: url("/assets/Mushroom_Card_NH-DHg3c2Ja.webp");
+	--card-start-color: #f9f2da;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.pumpkin-card {
+	background-image: url("/assets/Pumpkin_Card_NH-cT4A_SGD.webp");
+	--card-start-color: #faf9de;
+	--card-message-color: #fce26b;
+	--card-signature-color: var(--card-start-color);
+}
+
+.red-dragonflies-card {
+	background-image: url("/assets/Red-Dragonflies_Card_NH-BbFXSlrY.webp");
+	--card-start-color: #ef682a;
+	--card-message-color: #b96645;
+	--card-signature-color: var(--card-start-color);
+}
+
+.ribbon-card {
+	background-image: url("/assets/Ribbon_Card_NH-CG8ndqQ_.webp");
+	--card-start-color: #3a020d;
+	--card-message-color: #5d554a;
+	--card-signature-color: var(--card-start-color);
+}
+
+.shapes-card {
+	background-image: url("/assets/Shapes_Card_NH-DditX-jX.webp");
+	--card-start-color: #42bf7e;
+	--card-message-color: #635a53;
+	--card-signature-color: var(--card-start-color);
+}
+
+.shooting-stars-card {
+	background-image: url("/assets/Shooting-Stars_Card_NH-syWLnFIM.webp");
+	--card-start-color: #8dd5f6;
+	--card-message-color: #d7eff9;
+	--card-signature-color: var(--card-start-color);
+}
+
+.so-many-hearts-card {
+	background-image: url("/assets/So-Many-Hearts_Card_NH-BIJVzYuv.webp");
+	--card-start-color: #8d02d3;
+	--card-message-color: #fffbff;
+	--card-signature-color: var(--card-start-color);
+}
+
+.star-card {
+	background-image: url("/assets/Star_Card_NH-Kpl9bnth.webp");
+	--card-start-color: #c24309;
+	--card-message-color: #1b3d62;
+	--card-signature-color: var(--card-start-color);
+}
+
+.stationary-goods-card {
+	background-image: url("/assets/Stationery-Goods_Card_NH-CpEhcjFs.webp");
+	--card-start-color: #6e6e6f;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.torn-card {
+	background-image: url("/assets/Torn_Card_NH-BdWVy-nN.webp");
+	--card-start-color: #717171;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
+.turkey-day-card {
+	background-image: url("/assets/Turkey_Day_Card_NH-B7iIxXSt.webp");
+	--card-start-color: #b34b00;
+	--card-message-color: #7a1d00;
+	--card-signature-color: var(--card-start-color);
+}
+
+.velvety-card {
+	background-image: url("/assets/Velvety_Card_NH-BkjirRxf.webp");
+	--card-start-color: #c07d02;
+	--card-message-color: #ebbe62;
+	--card-signature-color: var(--card-start-color);
+}
+
+.wedding-card {
+	background-image: url("/assets/Wedding_Card_NH-B_KQcAPT.webp");
+	--card-start-color: #4c8	cba;
+	--card-message-color: #68ccd6;
+	--card-signature-color: var(--card-start-color);
+}
+
+.zen-card {
+	background-image: url("/assets/Zen_Card_NH-CcMaQW8z.webp");
+	--card-start-color: #ffcf72;
+	--card-message-color: #ffe9d6;
+	--card-signature-color: var(--card-start-color);
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+	.card-zoomable:hover {
+		transform: none;
+	}
+
+	.card:hover .card-label {
+		opacity: 0;
+	}
+}.canvas-background-container {
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.canvas-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}.footer {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-text {
+  width: 32%;
+  font-family: "Seurat Pro B", sans-serif;
+  font-size: 12px;
+  opacity: 0.6;
+  text-align: center;
+  z-index: 4;
+}
+
+.footer-text a {
+  color: inherit;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+  .footer {
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  .footer-text {
+    font-size: 10px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left !important;
+  }
+}.floating-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-image: url("data:image/png;base64,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");
+  background-size: cover;
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.25));
+  bottom: 25px;
+  right: 20px;
+  z-index: 4;
+  transition: transform 0.2s, filter 0.2s;
+  opacity: 0;
+  animation: fadeIn 0.8s forwards 0.75s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.floating-button:hover {
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.3));
+  transform: scale(1.15);
+  transition: transform 0.2s, filter 0.2s;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {}.editor  {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --card-scale: 0.6;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 0.2s;
+}
+
+@keyframes fadeInOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.editor-controls {
+	margin-top: 10px;
+	display: flex;
+	width: 800px;
+  max-width: 100%;
+  flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+  .editor {
+    --card-scale: 0.3;
+  }
+}.blob-button {
+	background: #00c7ba;
+	color: white;
+	border: none;
+	padding: 0;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 1px;
+	border-radius: 50px;
+	font-family: "Seurat Pro B", sans-serif;
+	font-size: 22px;
+	cursor: pointer;
+	outline: inherit;
+	min-width: 200px;
+	transition: transform 0.05s ease-in-out;
+}
+
+.blob-button:hover {
+	transform: scale(1.1);
+	transition: transform 0.075s ease-in-out;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+	.blob-button {
+		font-size: 18px;
+		min-width: 150px;
+		margin-bottom: 10px;
+	}
+
+	.card-zoomable:hover {
+		transform: none !important;
+	}
+}@font-face {
+  font-family: "Seurat Pro B";
+  src: url("../fonts/FOT-Seurat_Pro_B.otf") format("opentype");
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: linear-gradient(to bottom, #a8e063, rgb(255, 236, 185), #A1FFCE, #0ED2F7);
+  background: linear-gradient(to top, rgb(255, 236, 185), #A1FFCE, #0ED2F7);
+  background: linear-gradient(to top, rgb(255, 236, 185), #A1FFCE, #0ED2F7);
+  background-attachment: fixed;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}.waves-container {
+  --waves-speed: 3s;
+  position: fixed;
+  bottom: 0;
+  width: 200%;
+  height: 135px;
+  /* overflow: hidden; */
+  display: flex;
+  transition: bottom 0.75s ease-in-out;
+}
+
+.waves-container:hover > .bottle > .bottle-label {
+  opacity: 1;
+}
+
+.waves {
+  position: absolute;
+  width: 100%;
+  height: 105vh;
+  animation: waves-move var(--waves-speed) ease-in-out infinite alternate;
+  transition: margin-top 0.75s ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes waves-move {
+  to {
+    transform: translateX(-100px);
+  }
+}
+
+.front-waves {
+  margin-top: 30px;
+  background: #72c9f7;
+  background: linear-gradient(to bottom, #72c9f7, #a1fff7);
+  --mask:
+    radial-gradient(96.47px at 50% 132.5px, #000 99%, #0000 101%) calc(50% - 100px) 0/200px 100%,
+    radial-gradient(96.47px at 50% -82.5px, #0000 99%, #000 101%) 50% 50px/200px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.back-waves {
+  background: #5ab9eb;
+  animation-delay: calc(-1 * var(--waves-speed));
+  z-index: -10;
+  --mask:
+    radial-gradient(77.18px at 50% 106px, #000 99%, #0000 101%) calc(50% - 80px) 0/160px 100%,
+    radial-gradient(77.18px at 50% -66px, #0000 99%, #000 101%) 50% 40px/160px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.waves-hide {
+  margin-top: 135px;
+  transition: margin-top 0.75s ease-in-out;
+}
+.waves-flood {
+  margin-top: calc(-100vh + 135px);
+  transition: margin-top 0.75s ease-in-out;
+  z-index: -2 !important;
+}:root {
+  --bottle-scale: 0.8;
+}
+
+.bottle {
+  position: fixed;
+  bottom: -45px;
+  right: 30px;
+  transform: scale(var(--bottle-scale)) rotate(18deg) translateX(-50%);
+  width: 72px;
+  height: 101px;
+  background-image: url("/assets/egg-bottle-icon-DzQNdsXs.png");
+  background-size: cover;
+  animation: bob 1.8s infinite ease-in-out;
+  transition: bottom 1s ease-in-out, filter 0.1s ease-in-out;
+  cursor: pointer !important;
+}
+
+@keyframes bob {
+  0%, 100% {
+    margin-bottom: 40px;
+    filter: drop-shadow(0 0 2px white);
+  }
+  50% {
+    margin-bottom: 52px;
+    transform: scale(var(--bottle-scale)) rotate(14deg) translateX(-50%);
+    filter: drop-shadow(0 0 10px white);
+  }
+}
+
+.bottle-label {
+	position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: scales(var(--bottle-scale));
+  transform: translate(-50%, -50%);
+  width: 160px;
+  text-align: center;
+	font-family: "Seurat Pro B", "Varela Round", sans-serif;
+	font-size: 24px;
+	color: #fff;
+	background-color: #f49802;
+	padding: 2px;
+  padding-bottom: 1px;
+	border-radius: 1000px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bottle-hide {
+  bottom: -200px;
+  transition: bottom 0.65s ease-in-out;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+  .bottle {
+    --bottle-scale: 0.65;
+    right: 10px;
+  }
+
+  .bottle-label {
+    visibility: hidden;
+  }
+}

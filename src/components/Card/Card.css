@@ -160,83 +160,83 @@
 }
 
 .acorn-card {
-	background-image: url("./backgrounds/Acorn_Card_NH.png");
+	background-image: url("./backgrounds/Acorn_Card_NH.webp");
 	--card-start-color: #fff6d0;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .airmail-card {
-	background-image: url("./backgrounds/Airmail_Card_NH.png");
+	background-image: url("./backgrounds/Airmail_Card_NH.webp");
 }
 
 .baby-goods-card {
 	--card-horizontal-padding: 13%;
-	background-image: url("./backgrounds/Baby-Goods_Card_NH.png");
+	background-image: url("./backgrounds/Baby-Goods_Card_NH.webp");
 	--card-start-color: #69544e;
 	--card-message-color: #66bdca;
 	--card-signature-color: var(--card-start-color);
 }
 
 .balloons-card {
-	background-image: url("./backgrounds/Balloons_Card_NH.png");
+	background-image: url("./backgrounds/Balloons_Card_NH.webp");
 	--card-start-color: #da8528;
 	--card-message-color: #64553b;
 	--card-signature-color: var(--card-start-color);
 }
 
 .bandage-card {
-	background-image: url("./backgrounds/Bandage_Card_NH.png");
+	background-image: url("./backgrounds/Bandage_Card_NH.webp");
 	--card-start-color: #fbffff;
 	--card-message-color: #1173a3;
 	--card-signature-color: var(--card-start-color);
 }
 
 .beach-card {
-	background-image: url("./backgrounds/Beach_Card_NH.png");
+	background-image: url("./backgrounds/Beach_Card_NH.webp");
 	--card-start-color: #843800;
 	--card-message-color: #a55100;
 	--card-signature-color: var(--card-start-color);
 }
 
 .birthday-cake-card {
-	background-image: url("./backgrounds/Birthday-Cake_Card_NH.png");
+	background-image: url("./backgrounds/Birthday-Cake_Card_NH.webp");
 	--card-start-color: #533d15;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .blue-sky-card {
-	background-image: url("./backgrounds/Blue-Sky_Card_NH.png");
+	background-image: url("./backgrounds/Blue-Sky_Card_NH.webp");
 	--card-start-color: #a8ecff;
 	--card-message-color: #d7f8ff;
 	--card-signature-color: var(--card-start-color);
 }
 
 .bunny-day-card {
-	background-image: url("./backgrounds/Bunny_Day_Card_NH.png");
+	background-image: url("./backgrounds/Bunny_Day_Card_NH.webp");
 }
 
 .carpet-of-leaves-card {
-	background-image: url("./backgrounds/Carpet-Of-Leaves_Card_NH.png");
+	background-image: url("./backgrounds/Carpet-Of-Leaves_Card_NH.webp");
 	--card-start-color: #ffecc0;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .camo-card {
-	background-image: url("./backgrounds/Camo_Card_NH.png");
+	background-image: url("./backgrounds/Camo_Card_NH.webp");
 	--card-start-color: #e8e280;
 	--card-message-color: #fff3ce;
 	--card-signature-color: var(--card-start-color);
 }
 
 .cherry-blossoms-card {
-	background-image: url("./backgrounds/Cherry-Blossoms_Card_NH.png");
+	background-image: url("./backgrounds/Cherry-Blossoms_Card_NH.webp");
 }
 
 .fluffy-clouds-card {
-	background-image: url("./backgrounds/Fluffy-Clouds_Card_NH.png");
+	background-image: url("./backgrounds/Fluffy-Clouds_Card_NH.webp");
 	--card-start-color: #313953;
 	--card-message-color: #0b509e;
 	--card-signature-color: #fbfdff;
@@ -244,7 +244,7 @@
 }
 
 .cool-cool-card {
-	background-image: url("./backgrounds/Cool-Cool_Card_NH.png");
+	background-image: url("./backgrounds/Cool-Cool_Card_NH.webp");
 	--card-start-color: #dedede;
 	--card-message-color: #afafaf;
 	--card-signature-color: var(--card-start-color);
@@ -252,233 +252,233 @@
 }
 
 .common-card {
-	background-image: url("./backgrounds/Common_Card_NH.png");
+	background-image: url("./backgrounds/Common_Card_NH.webp");
 	--card-start-color: #806059;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .dandelion-card {
-	background-image: url("./backgrounds/Dandelion_Card_NH.png");
+	background-image: url("./backgrounds/Dandelion_Card_NH.webp");
 }
 
 .dawning-year-card {
-	background-image: url("./backgrounds/Dawning-Year_Card_NH.png");
+	background-image: url("./backgrounds/Dawning-Year_Card_NH.webp");
 	--card-start-color: #382d20;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .decorative-card {
-	background-image: url("./backgrounds/Decorative_Card_NH.png");
+	background-image: url("./backgrounds/Decorative_Card_NH.webp");
 	--card-start-color: #ffffc5;
 	--card-message-color: #ac441a;
 	--card-signature-color: var(--card-start-color);
 }
 
 .elegant-roses-card {
-	background-image: url("./backgrounds/Elegant-Roses_Card_NH.png");
+	background-image: url("./backgrounds/Elegant-Roses_Card_NH.webp");
 	--card-start-color: #ebd989;
 	--card-message-color: #f0dbb1;
 	--card-signature-color: var(--card-start-color);
 }
 
 .fanciful-card {
-	background-image: url("./backgrounds/Fanciful_Card_NH.png");
+	background-image: url("./backgrounds/Fanciful_Card_NH.webp");
 	--card-start-color: #ffe2d4;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .fantasy-stars-card {
-	background-image: url("./backgrounds/Fantasy-Stars_Card_NH.png");
+	background-image: url("./backgrounds/Fantasy-Stars_Card_NH.webp");
 	--card-start-color: #ea61dd;
 	--card-message-color: #6733e5;
 	--card-signature-color: #fe973d;
 }
 
 .fathers-day-card {
-	background-image: url("./backgrounds/Fathers_Day_Card_NH.png");
+	background-image: url("./backgrounds/Fathers_Day_Card_NH.webp");
 }
 
 .fireworks-card {
-	background-image: url("./backgrounds/Fireworks_Card_NH.png");
+	background-image: url("./backgrounds/Fireworks_Card_NH.webp");
 	--card-start-color: #ffbaf4;
 	--card-message-color: #c9a3ff;
 	--card-signature-color: #92a7f7;
 }
 
 .flower-bouquet-card {
-	background-image: url("./backgrounds/Flower-Bouquet_Card_NH.png");
+	background-image: url("./backgrounds/Flower-Bouquet_Card_NH.webp");
 	--card-start-color: #673d2c;
 	--card-message-color: #933102;
 	--card-signature-color: var(--card-start-color);
 }
 
 .full-bloom-card {
-	background-image: url("./backgrounds/Full-Bloom_Card_NH.png");
+	background-image: url("./backgrounds/Full-Bloom_Card_NH.webp");
 }
 
 .gears-card {
-	background-image: url("./backgrounds/Gears_Card_NH.png");
+	background-image: url("./backgrounds/Gears_Card_NH.webp");
 	--card-start-color: #fdfcff;
 	--card-message-color: #8de7de;
 	--card-signature-color: var(--card-start-color);
 }
 
 .gem-card {
-	background-image: url("./backgrounds/Gem_Card_NH.png");
+	background-image: url("./backgrounds/Gem_Card_NH.webp");
 	--card-start-color: #2d7f86;
 	--card-message-color: #398470;
 	--card-signature-color: var(--card-start-color);
 }
 
 .goldfish-card {
-	background-image: url("./backgrounds/Goldfish_Card_NH.png");
+	background-image: url("./backgrounds/Goldfish_Card_NH.webp");
 	--card-start-color: #44483e;
 	--card-message-color: #2d7895;
 	--card-signature-color: var(--card-start-color);
 }
 
 .graduation-card {
-	background-image: url("./backgrounds/Graduation_Card_NH.png");
+	background-image: url("./backgrounds/Graduation_Card_NH.webp");
 	--card-start-color: #fffeff;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .graffiti-card {
-	background-image: url("./backgrounds/Graffiti_Card_NH.png");
+	background-image: url("./backgrounds/Graffiti_Card_NH.webp");
 	--card-start-color: #18f6e4;
 	--card-message-color: #f4f72d;
 	--card-signature-color: var(--card-start-color);
 }
 
 .halloween-card {
-	background-image: url("./backgrounds/Halloween_Card_NH.png");
+	background-image: url("./backgrounds/Halloween_Card_NH.webp");
 	--card-start-color: #fed04b;
 	--card-message-color: #fe9e34;
 	--card-signature-color: #fdd347;
 }
 
 .happy-clovers-card {
-	background-image: url("./backgrounds/Happy-Clovers_Card_NH.png");
+	background-image: url("./backgrounds/Happy-Clovers_Card_NH.webp");
 	--card-start-color: #6a441b;
 	--card-message-color: #1a4a00;
 	--card-signature-color: var(--card-start-color);
 }
 
 .hibiscus-card {
-	background-image: url("./backgrounds/Hibiscus_Card_NH.png");
+	background-image: url("./backgrounds/Hibiscus_Card_NH.webp");
 	--card-start-color: #d90b7c;
 	--card-message-color: #188da0;
 	--card-signature-color: var(--card-start-color);
 }
 
 .lovely-hearts-card {
-	background-image: url("./backgrounds/Lovely_Hearts_Card_NH.png");
+	background-image: url("./backgrounds/Lovely_Hearts_Card_NH.webp");
 	--card-start-color: #f29e9f;
 	--card-message-color: #d15c64;
 	--card-signature-color: var(--card-start-color);
 }
 
 .mothers-day-card {
-	background-image: url("./backgrounds/Mothers_Day_Card_NH.png");
+	background-image: url("./backgrounds/Mothers_Day_Card_NH.webp");
 }
 
 .mushroom-card {
-	background-image: url("./backgrounds/Mushroom_Card_NH.png");
+	background-image: url("./backgrounds/Mushroom_Card_NH.webp");
 	--card-start-color: #f9f2da;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .pumpkin-card {
-	background-image: url("./backgrounds/Pumpkin_Card_NH.png");
+	background-image: url("./backgrounds/Pumpkin_Card_NH.webp");
 	--card-start-color: #faf9de;
 	--card-message-color: #fce26b;
 	--card-signature-color: var(--card-start-color);
 }
 
 .red-dragonflies-card {
-	background-image: url("./backgrounds/Red-Dragonflies_Card_NH.png");
+	background-image: url("./backgrounds/Red-Dragonflies_Card_NH.webp");
 	--card-start-color: #ef682a;
 	--card-message-color: #b96645;
 	--card-signature-color: var(--card-start-color);
 }
 
 .ribbon-card {
-	background-image: url("./backgrounds/Ribbon_Card_NH.png");
+	background-image: url("./backgrounds/Ribbon_Card_NH.webp");
 	--card-start-color: #3a020d;
 	--card-message-color: #5d554a;
 	--card-signature-color: var(--card-start-color);
 }
 
 .shapes-card {
-	background-image: url("./backgrounds/Shapes_Card_NH.png");
+	background-image: url("./backgrounds/Shapes_Card_NH.webp");
 	--card-start-color: #42bf7e;
 	--card-message-color: #635a53;
 	--card-signature-color: var(--card-start-color);
 }
 
 .shooting-stars-card {
-	background-image: url("./backgrounds/Shooting-Stars_Card_NH.png");
+	background-image: url("./backgrounds/Shooting-Stars_Card_NH.webp");
 	--card-start-color: #8dd5f6;
 	--card-message-color: #d7eff9;
 	--card-signature-color: var(--card-start-color);
 }
 
 .so-many-hearts-card {
-	background-image: url("./backgrounds/So-Many-Hearts_Card_NH.png");
+	background-image: url("./backgrounds/So-Many-Hearts_Card_NH.webp");
 	--card-start-color: #8d02d3;
 	--card-message-color: #fffbff;
 	--card-signature-color: var(--card-start-color);
 }
 
 .star-card {
-	background-image: url("./backgrounds/Star_Card_NH.png");
+	background-image: url("./backgrounds/Star_Card_NH.webp");
 	--card-start-color: #c24309;
 	--card-message-color: #1b3d62;
 	--card-signature-color: var(--card-start-color);
 }
 
 .stationary-goods-card {
-	background-image: url("./backgrounds/Stationery-Goods_Card_NH.png");
+	background-image: url("./backgrounds/Stationery-Goods_Card_NH.webp");
 	--card-start-color: #6e6e6f;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .torn-card {
-	background-image: url("./backgrounds/Torn_Card_NH.png");
+	background-image: url("./backgrounds/Torn_Card_NH.webp");
 	--card-start-color: #717171;
 	--card-message-color: var(--card-start-color);
 	--card-signature-color: var(--card-start-color);
 }
 
 .turkey-day-card {
-	background-image: url("./backgrounds/Turkey_Day_Card_NH.png");
+	background-image: url("./backgrounds/Turkey_Day_Card_NH.webp");
 	--card-start-color: #b34b00;
 	--card-message-color: #7a1d00;
 	--card-signature-color: var(--card-start-color);
 }
 
 .velvety-card {
-	background-image: url("./backgrounds/Velvety_Card_NH.png");
+	background-image: url("./backgrounds/Velvety_Card_NH.webp");
 	--card-start-color: #c07d02;
 	--card-message-color: #ebbe62;
 	--card-signature-color: var(--card-start-color);
 }
 
 .wedding-card {
-	background-image: url("./backgrounds/Wedding_Card_NH.png");
+	background-image: url("./backgrounds/Wedding_Card_NH.webp");
 	--card-start-color: #4c8	cba;
 	--card-message-color: #68ccd6;
 	--card-signature-color: var(--card-start-color);
 }
 
 .zen-card {
-	background-image: url("./backgrounds/Zen_Card_NH.png");
+	background-image: url("./backgrounds/Zen_Card_NH.webp");
 	--card-start-color: #ffcf72;
 	--card-message-color: #ffe9d6;
 	--card-signature-color: var(--card-start-color);
