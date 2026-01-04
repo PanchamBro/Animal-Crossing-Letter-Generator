@@ -49,6 +49,13 @@ export const CardName = {
   Mushroom: "Mushroom",
   CarpetOfLeaves: "Carpet-Of-Leaves",
   Acorn: "Acorn",
+  WarmSweater: "Warm-Sweater",
+  Holiday: "Holiday",
+  FestiveTree: "Festive-Tree",
+  WinterCamellia: "Winter-Camellia",
+  Snowflake: "Snowflake",
+  Snowperson: "Snowperson",
+  TownView: "Town-View",
 } as const;
 
 export type CardName = typeof CardName[keyof typeof CardName];
@@ -91,6 +98,30 @@ export const DEFAULT_STATIONARY = [
 ];
 
 export const HOLIDAYS = {
+    Spring: {
+    name: "Spring",
+    start: { month: 2, day: 25 },
+    end: { month: 5, day: 31 },
+    cards: []
+  },
+  Summer: {
+    name: "Summer",
+    start: { month: 5, day: 1 },
+    end: { month: 8, day: 31 },
+    cards: [CardName.FluffyClouds, CardName.Beach, CardName.Hibiscus]
+  },
+  Fall: {
+    name: "Fall",
+    start: { month: 9, day: 1 },
+    end: { month: 11, day: 25 },
+    cards: [CardName.Acorn, CardName.Mushroom, CardName.CarpetOfLeaves]
+  },
+  Winter: {
+    name: "Winter",
+    start: { month: 11, day: 26 },
+    end: { month: 2, day: 24 },
+    cards: [CardName.WinterCamellia, CardName.Snowflake, CardName.Snowperson, CardName.TownView]
+  },
   ValentinesDay: {
     name: "Valentine's Day",
     start: { month: 1, day: 16 },
@@ -131,31 +162,7 @@ export const HOLIDAYS = {
     name: "Christmas",
     start: { month: 11, day: 20 },
     end: { month: 1, day: 10 },
-    cards: []
-  },
-  Spring: {
-    name: "Spring",
-    start: { month: 2, day: 25 },
-    end: { month: 5, day: 31 },
-    cards: []
-  },
-  Summer: {
-    name: "Summer",
-    start: { month: 5, day: 1 },
-    end: { month: 8, day: 31 },
-    cards: [CardName.FluffyClouds, CardName.Beach, CardName.Hibiscus]
-  },
-  Fall: {
-    name: "Fall",
-    start: { month: 9, day: 1 },
-    end: { month: 11, day: 25 },
-    cards: [CardName.Acorn, CardName.Mushroom, CardName.CarpetOfLeaves]
-  },
-  Winter: {
-    name: "Winter",
-    start: { month: 11, day: 26 },
-    end: { month: 2, day: 24 },
-    cards: []
+    cards: [CardName.WarmSweater, CardName.Holiday, CardName.FestiveTree]
   }
 }
 

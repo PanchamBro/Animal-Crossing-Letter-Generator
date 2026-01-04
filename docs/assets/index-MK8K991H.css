@@ -498,6 +498,13 @@
 	background-image: url("/assets/Fathers_Day_Card_NH-BQhneL3d.webp");
 }
 
+.festive-tree-card {
+	background-image: url("/assets/Festive-Tree_Card_NH-snmbJSEs.webp");
+	--card-start-color: #fdffff;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
 .fireworks-card {
 	background-image: url("/assets/Fireworks_Card_NH--cKwJs3Z.webp");
 	--card-start-color: #ffbaf4;
@@ -572,6 +579,13 @@
 	--card-signature-color: var(--card-start-color);
 }
 
+.holiday-card {
+	background-image: url("/assets/Holiday_Card_NH-DIaR-2K6.webp");
+	--card-start-color: #1f7c56;
+	--card-message-color: #a70005;
+	--card-signature-color: var(--card-start-color);
+}
+
 .lovely-hearts-card {
 	background-image: url("/assets/Lovely_Hearts_Card_NH-BDEnYhue.webp");
 	--card-start-color: #f29e9f;
@@ -625,6 +639,20 @@
 	--card-signature-color: var(--card-start-color);
 }
 
+.snowflake-card {
+	background-image: url("/assets/Snowflake_Card_NH-DjAq4Y6S.webp");
+	--card-start-color: #3ea0ba;
+	--card-message-color: #02739b;
+	--card-signature-color: var(--card-start-color);
+}
+
+.snowperson-card {
+	background-image: url("/assets/Snowperson_Card_NH-RUOIEZl3.webp");
+	--card-start-color: #3a9eba;
+	--card-message-color: #f9ffff;
+	--card-signature-color: var(--card-start-color);
+}
+
 .so-many-hearts-card {
 	background-image: url("/assets/So-Many-Hearts_Card_NH-BIJVzYuv.webp");
 	--card-start-color: #8d02d3;
@@ -653,6 +681,13 @@
 	--card-signature-color: var(--card-start-color);
 }
 
+.town-view-card {
+	background-image: url("/assets/Town-View_Card_NH-C4FfFMmA.webp");
+	--card-start-color: #5a0100;
+	--card-message-color: #7c2100;
+	--card-signature-color: var(--card-start-color);
+}
+
 .turkey-day-card {
 	background-image: url("/assets/Turkey_Day_Card_NH-B7iIxXSt.webp");
 	--card-start-color: #b34b00;
@@ -667,10 +702,24 @@
 	--card-signature-color: var(--card-start-color);
 }
 
+.warm-sweater-card {
+	background-image: url("/assets/Warm-Sweater_Card_NH-CA1d0R8v.webp");
+	--card-start-color: #fffdfd;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
+}
+
 .wedding-card {
 	background-image: url("/assets/Wedding_Card_NH-B_KQcAPT.webp");
-	--card-start-color: #4c8	cba;
+	--card-start-color: #4c8cba;
 	--card-message-color: #68ccd6;
+	--card-signature-color: var(--card-start-color);
+}
+
+.winter-camellia-card {
+	background-image: url("/assets/Winter-Camellia_Card_NH-PSuWVe-C.webp");
+	--card-start-color: #fcfcfc;
+	--card-message-color: #404b64;
 	--card-signature-color: var(--card-start-color);
 }
 

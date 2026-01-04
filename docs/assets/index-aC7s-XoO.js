@@ -14329,7 +14329,14 @@ const CardName = {
   Halloween: "Halloween",
   Mushroom: "Mushroom",
   CarpetOfLeaves: "Carpet-Of-Leaves",
-  Acorn: "Acorn"
+  Acorn: "Acorn",
+  WarmSweater: "Warm-Sweater",
+  Holiday: "Holiday",
+  FestiveTree: "Festive-Tree",
+  WinterCamellia: "Winter-Camellia",
+  Snowflake: "Snowflake",
+  Snowperson: "Snowperson",
+  TownView: "Town-View"
 };
 const DEFAULT_STATIONARY = [
   CardName.Airmail,
@@ -14368,6 +14375,30 @@ const DEFAULT_STATIONARY = [
   CardName.Fireworks
 ];
 const HOLIDAYS = {
+  Spring: {
+    name: "Spring",
+    start: { month: 2, day: 25 },
+    end: { month: 5, day: 31 },
+    cards: []
+  },
+  Summer: {
+    name: "Summer",
+    start: { month: 5, day: 1 },
+    end: { month: 8, day: 31 },
+    cards: [CardName.FluffyClouds, CardName.Beach, CardName.Hibiscus]
+  },
+  Fall: {
+    name: "Fall",
+    start: { month: 9, day: 1 },
+    end: { month: 11, day: 25 },
+    cards: [CardName.Acorn, CardName.Mushroom, CardName.CarpetOfLeaves]
+  },
+  Winter: {
+    name: "Winter",
+    start: { month: 11, day: 26 },
+    end: { month: 2, day: 24 },
+    cards: [CardName.WinterCamellia, CardName.Snowflake, CardName.Snowperson, CardName.TownView]
+  },
   ValentinesDay: {
     name: "Valentine's Day",
     start: { month: 1, day: 16 },
@@ -14408,31 +14439,7 @@ const HOLIDAYS = {
     name: "Christmas",
     start: { month: 11, day: 20 },
     end: { month: 1, day: 10 },
-    cards: []
-  },
-  Spring: {
-    name: "Spring",
-    start: { month: 2, day: 25 },
-    end: { month: 5, day: 31 },
-    cards: []
-  },
-  Summer: {
-    name: "Summer",
-    start: { month: 5, day: 1 },
-    end: { month: 8, day: 31 },
-    cards: [CardName.FluffyClouds, CardName.Beach, CardName.Hibiscus]
-  },
-  Fall: {
-    name: "Fall",
-    start: { month: 9, day: 1 },
-    end: { month: 11, day: 25 },
-    cards: [CardName.Acorn, CardName.Mushroom, CardName.CarpetOfLeaves]
-  },
-  Winter: {
-    name: "Winter",
-    start: { month: 11, day: 26 },
-    end: { month: 2, day: 24 },
-    cards: []
+    cards: [CardName.WarmSweater, CardName.Holiday, CardName.FestiveTree]
   }
 };
 function drawPathForRoundedRect(ctx, x, y, width, height, radius) {
@@ -14520,7 +14527,8 @@ const backgroundColors = {
   [CardName.Balloons]: "rgb(252, 252, 240)",
   [CardName.Fireworks]: "rgb(54, 42, 152)",
   [CardName.Hibiscus]: "rgb(243, 241, 242)",
-  [CardName.TurkeyDay]: "rgb(216, 147, 1)"
+  [CardName.TurkeyDay]: "rgb(216, 147, 1)",
+  [CardName.WarmSweater]: "rgb(138, 1, 0)"
 };
 function Card({
   type = CardName.Airmail,
@@ -14595,7 +14603,10 @@ function CardSelection() {
     const startDay = holiday.start.day;
     const endMonth = holiday.end.month;
     const endDay = holiday.end.day;
-    const inRange = (month > startMonth || month === startMonth && day >= startDay) && (month < endMonth || month === endMonth && day <= endDay);
+    const afterStart = month > startMonth || month === startMonth && day >= startDay;
+    const beforeEnd = month < endMonth || month === endMonth && day <= endDay;
+    const spansNewYear = endMonth < startMonth || endMonth === startMonth && endDay < startDay;
+    const inRange = spansNewYear ? afterStart || beforeEnd : afterStart && beforeEnd;
     if (inRange) {
       for (let i = holiday.cards.length - 1; i >= 0; i--) {
         const type = holiday.cards[i];
@@ -23183,4 +23194,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-CJCCwz-T.js.map
+//# sourceMappingURL=index-aC7s-XoO.js.map

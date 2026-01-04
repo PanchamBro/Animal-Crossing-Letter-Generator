@@ -22,8 +22,12 @@ export default function CardSelection() {
     const endMonth = holiday.end.month;
     const endDay = holiday.end.day;
     // Note that the end month may be less than the start month if the holiday spans the new year
-    const inRange = (month > startMonth || (month === startMonth && day >= startDay)) &&
-      (month < endMonth || (month === endMonth && day <= endDay));
+    const afterStart = month > startMonth || (month === startMonth && day >= startDay);
+    const beforeEnd = month < endMonth || (month === endMonth && day <= endDay);
+    const spansNewYear = endMonth < startMonth || (endMonth === startMonth && endDay < startDay);
+    const inRange = spansNewYear
+      ? (afterStart || beforeEnd)
+      : (afterStart && beforeEnd);
     if (inRange) {
       for (let i = holiday.cards.length - 1; i >= 0; i--) {
         const type = holiday.cards[i];
