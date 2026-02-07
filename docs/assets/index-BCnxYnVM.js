@@ -13178,6 +13178,38 @@ function DataRoutes({
 }) {
   return useRoutesImpl(routes, void 0, state, future);
 }
+function Navigate({
+  to,
+  replace: replace2,
+  state,
+  relative
+}) {
+  invariant(
+    useInRouterContext(),
+    // TODO: This error is probably because they somehow have 2 versions of
+    // the router loaded. We can help them understand how to avoid that.
+    `<Navigate> may be used only in the context of a <Router> component.`
+  );
+  let { static: isStatic } = reactExports.useContext(NavigationContext);
+  warning(
+    !isStatic,
+    `<Navigate> must not be used on the initial render in a <StaticRouter>. This is a no-op, but you should modify your code so the <Navigate> is only ever rendered in response to some user interaction or state change.`
+  );
+  let { matches } = reactExports.useContext(RouteContext);
+  let { pathname: locationPathname } = useLocation();
+  let navigate = useNavigate();
+  let path = resolveTo(
+    to,
+    getResolveToMatches(matches),
+    locationPathname,
+    relative === "path"
+  );
+  let jsonPath = JSON.stringify(path);
+  reactExports.useEffect(() => {
+    navigate(JSON.parse(jsonPath), { replace: replace2, state, relative });
+  }, [navigate, jsonPath, relative, replace2, state]);
+  return null;
+}
 function Route(props) {
   invariant(
     false,
@@ -23101,11 +23133,25 @@ const bottles = /* @__PURE__ */ JSON.parse(`[{"time":1754758702790,"card":"Shoot
 const bottlesData = {
   bottles
 };
-function getRandomBottle() {
-  const bottles2 = bottlesData.bottles ?? [];
-  const randomBottle = bottles2[Math.floor(Math.random() * bottles2.length)];
-  const linkTo = generateLinkPage(randomBottle.card, randomBottle.start, randomBottle.message, randomBottle.signature);
-  return linkTo;
+function getBottleLink(index) {
+  const bottles2 = bottlesData.bottles;
+  const bottle = bottles2[index % bottles2.length];
+  return generateLinkPage(bottle.card, bottle.start, bottle.message, bottle.signature);
+}
+function getRandomBottleLink() {
+  const index = Math.floor(Math.random() * bottlesData.bottles.length);
+  return getBottleLink(index);
+}
+function Bottle$1() {
+  const [searchParams] = useSearchParams();
+  const indexParam = searchParams.get("index");
+  if (indexParam) {
+    const index = parseInt(indexParam, 10);
+    if (!isNaN(index)) {
+      return /* @__PURE__ */ jsxRuntimeExports.jsx(Navigate, { to: getBottleLink(index), replace: true });
+    }
+  }
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Navigate, { to: getRandomBottleLink(), replace: true });
 }
 function FoundBottle() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
@@ -23115,7 +23161,7 @@ function FoundBottle() {
       {
         name: "Idrees",
         message: "Looks like a message in a bottle washed ashore, shared by a random stranger across the world! Let's open it up!",
-        linkTo: getRandomBottle()
+        linkTo: getRandomBottleLink()
       }
     )
   ] });
@@ -23188,10 +23234,11 @@ ReactDOM.createRoot(root).render(
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "share", element: /* @__PURE__ */ jsxRuntimeExports.jsx(EditorPage, { shareMode: true }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "found-bottle", element: /* @__PURE__ */ jsxRuntimeExports.jsx(FoundBottle, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "sent-bottle", element: /* @__PURE__ */ jsxRuntimeExports.jsx(SentBottle, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "random-bottle", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Bottle$1, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "privacy-policy", element: /* @__PURE__ */ jsxRuntimeExports.jsx(PrivacyPolicy, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "community", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Redirect, { to: "https://discord.gg/6yxE9prcNc" }) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-aC7s-XoO.js.map
+//# sourceMappingURL=index-BCnxYnVM.js.map

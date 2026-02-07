@@ -3,7 +3,7 @@ import { Routes, Route, HashRouter } from "react-router";
 import Introduction from "./routes/introduction";
 import Library from "./routes/library";
 import Editor from "./routes/editor";
-import FoundBottle from "./routes/found-bottle";
+import FoundBottle, { Bottle } from "./routes/found-bottle";
 import SentBottle from "./routes/sent-bottle";
 import PrivacyPolicy from "./routes/privacy-policy";
 import "./main.css";
@@ -22,6 +22,7 @@ ReactDOM.createRoot(root!).render(
       <Route path="share" element={<Editor shareMode />} />
       <Route path="found-bottle" element={<FoundBottle />} />
       <Route path="sent-bottle" element={<SentBottle />} />
+      <Route path="random-bottle" element={<Bottle />} />
       <Route path="privacy-policy" element={<PrivacyPolicy />} />
       <Route path="community" element={<Redirect to="https://discord.gg/6yxE9prcNc" />} />
     </Routes>
