@@ -15158,14 +15158,17 @@ function decode$2(encodedText) {
   const decoded = LZString.decompressFromEncodedURIComponent(encodedText);
   return decoded;
 }
-function generateLinkPage(cardType, startText, messageText, signatureText) {
+function generateLinkParams(cardType, startText, messageText, signatureText) {
   const params = new URLSearchParams({
     card: cardType,
     start: encode(startText),
     message: encode(messageText),
     signature: encode(signatureText)
   });
-  return "/share?" + params.toString();
+  return params;
+}
+function generateLinkPage(cardType, startText, messageText, signatureText) {
+  return "/share?" + generateLinkParams(cardType, startText, messageText, signatureText).toString();
 }
 function generateLink(cardType, startText, messageText, signatureText) {
   return `${window.location.origin}/#${generateLinkPage(cardType, startText, messageText, signatureText)}`;
@@ -23099,7 +23102,7 @@ function Editor({ cardType, shareMode = false, startText = DEFAULT_START_TEXT, m
             } else {
               shareBottle(cardType, startText2, messageText2, signatureText2);
             }
-            navigate("/sent-bottle");
+            navigate("/sent-bottle?" + generateLinkParams(cardType, startText2, messageText2, signatureText2).toString());
           }
         }
       } })
@@ -23167,6 +23170,7 @@ function FoundBottle() {
   ] });
 }
 function SentBottle() {
+  const [searchParams] = useSearchParams();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(PageTitle, { title: "Sent Message in a Bottle!" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -23174,7 +23178,7 @@ function SentBottle() {
       {
         name: "Idrees",
         message: "Your bottle has been sent away! Hopefully it will reach someone special across the world!",
-        linkTo: "/library"
+        linkTo: "/share?" + searchParams.toString()
       }
     )
   ] });
@@ -23241,4 +23245,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-Df3ZtGwi.js.map
+//# sourceMappingURL=index-CVvl-P5k.js.map

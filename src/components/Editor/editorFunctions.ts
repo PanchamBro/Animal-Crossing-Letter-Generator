@@ -10,14 +10,18 @@ export function decode(encodedText: string) {
   return decoded;
 }
 
-export function generateLinkPage(cardType: CardName, startText: string, messageText: string, signatureText: string) {
+export function generateLinkParams(cardType: CardName, startText: string, messageText: string, signatureText: string) {
   const params = new URLSearchParams({
     card: cardType,
     start: encode(startText),
     message: encode(messageText),
     signature: encode(signatureText)
   });
-  return "/share?" + params.toString();
+  return params;
+}
+
+export function generateLinkPage(cardType: CardName, startText: string, messageText: string, signatureText: string) {
+  return "/share?" + generateLinkParams(cardType, startText, messageText, signatureText).toString();
 }
 
 export function generateLink(cardType: CardName, startText: string, messageText: string, signatureText: string) {

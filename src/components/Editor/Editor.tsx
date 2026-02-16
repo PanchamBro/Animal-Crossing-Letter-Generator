@@ -2,7 +2,7 @@ import "./Editor.css";
 import Card from "../Card/Card";
 import { CardName } from "../Card/cardConstants";
 import Button from "../Button/Button";
-import { generateLink } from "./editorFunctions";
+import { generateLink, generateLinkParams } from "./editorFunctions";
 import html2canvas from "html2canvas";
 import { useNavigate } from "react-router";
 import { useState } from "react";
@@ -157,7 +157,7 @@ export default function Editor({ cardType, shareMode: shareMode = false, startTe
                 } else {
                   shareBottle(cardType, startText, messageText, signatureText);
                 }
-                  navigate("/sent-bottle");
+                  navigate("/sent-bottle?" + generateLinkParams(cardType, startText, messageText, signatureText).toString());
               }
             }
           }} />
