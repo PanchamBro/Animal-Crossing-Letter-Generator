@@ -23088,7 +23088,7 @@ function Editor({ cardType, shareMode = false, startText = DEFAULT_START_TEXT, m
         navigate("/");
       } }),
       !shareMode && /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { label: "Share Globally", onClick: () => {
-        if (confirm("Are you sure you want to share this letter with the entire world?\nIt will be available for anyone to see, so make sure it is appropriate and doesn't contain any personal information!")) {
+        if (confirm("Are you sure you want to share this letter with the entire world?\n\nIt will be available for anyone to see, so make sure it is appropriate and doesn't contain any personal information!\n\nIf you'd like to send it to a specific person, press cancel and use the 'Copy Link' or 'Save Image' buttons instead!")) {
           const cardElement = document.querySelector(".card");
           if (cardElement instanceof HTMLElement) {
             const startText2 = cardElement.querySelector(".card-start")?.textContent ?? "";
@@ -23241,4 +23241,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-ChA42_Bs.js.map
+//# sourceMappingURL=index-Df3ZtGwi.js.map
