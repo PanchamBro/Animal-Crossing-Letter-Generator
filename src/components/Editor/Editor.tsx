@@ -70,7 +70,7 @@ function copyLink(cardType: CardName, startText: string, messageText: string, si
 function shareBottle(cardType: CardName, startText: string, messageText: string, signatureText: string) {
   const time = Date.now();
   const link = generateLink(cardType, startText, messageText, signatureText);
-  const content = `\`\`\`json\n{\n  "time": ${time},\n  "card": "${cardType}",\n  "start": "${startText}",\n  "message": "${messageText}",\n  "signature": "${signatureText}"\n}\n\`\`\`\n${link}`;
+  const content = `\`\`\`json\n{\n  "time": ${time},\n  "card": ${JSON.stringify(cardType)},\n  "start": ${JSON.stringify(startText)},\n  "message": ${JSON.stringify(messageText)},\n  "signature": ${JSON.stringify(signatureText)}\n}\n\`\`\`\n${link}`;
   fetch(API_URL, {
     method: "POST",
     headers: {
