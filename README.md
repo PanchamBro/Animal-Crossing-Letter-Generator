@@ -10,7 +10,7 @@
 
 [![https://acmail.idreesinc.com](images/preview.png)](https://acmail.idreesinc.com)
 
-A pixel-perfect editor for creating the letters from Animal Crossing New Horizons!
+A pixel-perfect editor for writing letters like in Animal Crossing New Horizons!
 
 *Notice: This project is not affiliated with Animal Crossing or Nintendo in any way and is exclusively a fan project. The open source license does not apply to the names, assets, fonts, or characters used in this project.*
 
