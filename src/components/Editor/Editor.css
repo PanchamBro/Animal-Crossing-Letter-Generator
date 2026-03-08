@@ -21,19 +21,29 @@
   }
 }
 
-.editor-controls {
-	margin-top: 10px;
-	display: flex;
-	width: 800px;
+.editor-controls, .share-buttons {
+  margin-top: 10px;
+  display: flex;
+  width: 800px;
   max-width: 100%;
   flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.share-buttons {
+  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
 }
 
 @media screen and (max-width: 700px) and (orientation: portrait) {
   .editor {
     --card-scale: 0.3;
+  }
+
+  .share-buttons {
+    gap: 5px;
   }
 }

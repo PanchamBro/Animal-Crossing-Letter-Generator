@@ -14691,8 +14691,8 @@ function Library() {
     ] })
   ] });
 }
-function Button({ label, onClick }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: "blob-button", onClick, children: label });
+function Button({ label, onClick, small, color: color2 }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: "blob-button" + (small ? " blob-button-small" : ""), onClick, style: { backgroundColor: color2 }, children: label });
 }
 var lzString = { exports: {} };
 var hasRequiredLzString;
@@ -23106,6 +23106,14 @@ function Editor({ cardType, shareMode = false, startText = DEFAULT_START_TEXT, m
           }
         }
       } })
+    ] }),
+    shareMode && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "share-buttons", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { label: "Follow on Bluesky", onClick: () => {
+        window.open("https://bsky.app/profile/acmail.idreesinc.com", "_blank");
+      }, small: true, color: "#59ace0" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { label: "Follow on Tumblr", onClick: () => {
+        window.open("https://www.tumblr.com/blog/animal-crossing-letters", "_blank");
+      }, small: true, color: "#5688a8" })
     ] })
   ] });
 }
@@ -23245,4 +23253,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-cfBz7fXz.js.map
+//# sourceMappingURL=index-CmiY72Is.js.map

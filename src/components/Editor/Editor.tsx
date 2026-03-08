@@ -157,12 +157,22 @@ export default function Editor({ cardType, shareMode: shareMode = false, startTe
                 } else {
                   shareBottle(cardType, startText, messageText, signatureText);
                 }
-                  navigate("/sent-bottle?" + generateLinkParams(cardType, startText, messageText, signatureText).toString());
+                navigate("/sent-bottle?" + generateLinkParams(cardType, startText, messageText, signatureText).toString());
               }
             }
           }} />
         )}
       </div>
+      {shareMode && (
+        <div className="share-buttons">
+          <Button label="Follow on Bluesky" onClick={() => {
+            window.open("https://bsky.app/profile/acmail.idreesinc.com", "_blank");
+          }} small={true} color="#59ace0" />
+          <Button label="Follow on Tumblr" onClick={() => {
+            window.open("https://www.tumblr.com/blog/animal-crossing-letters", "_blank");
+          }} small={true} color="#5688a8" />
+        </div>
+      )}
     </div>
   );
 }
