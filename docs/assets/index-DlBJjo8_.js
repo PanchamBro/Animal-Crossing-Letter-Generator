@@ -14673,11 +14673,18 @@ function Footer() {
         }
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
         "Follow along on ",
         /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "https://bsky.app/profile/acmail.idreesinc.com", target: "_blank", children: "Bluesky" }),
-        " and ",
+        " or ",
         /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "https://www.tumblr.com/blog/animal-crossing-letters", target: "_blank", children: "Tumblr" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+        "Get updates on ",
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "https://bsky.app/profile/idreesinc.com", target: "_blank", children: "Bluesky" }),
+        " and ",
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "https://www.instagram.com/idreesinc", target: "_blank", children: "Instagram" })
       ] })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "footer-text", style: { textAlign: "right" }, children: [
@@ -23262,4 +23269,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-DcaLXsNP.js.map
+//# sourceMappingURL=index-DlBJjo8_.js.map
