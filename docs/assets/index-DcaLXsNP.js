@@ -14662,15 +14662,24 @@ function CardSelection() {
 function Footer() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("footer", { className: "footer", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "footer-text", style: { textAlign: "left" }, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/privacy-policy", children: "Privacy Policy" }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "footer-text", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-      "a",
-      {
-        href: "https://discord.gg/6yxE9prcNc",
-        target: "_blank",
-        rel: "noopener noreferrer",
-        children: "Made with ❤️ by Idrees"
-      }
-    ) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "footer-text footer-center", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "a",
+        {
+          href: "https://discord.gg/6yxE9prcNc",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          children: "Made with ❤️ by Idrees"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+        "Follow along on ",
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "https://bsky.app/profile/acmail.idreesinc.com", target: "_blank", children: "Bluesky" }),
+        " and ",
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "https://www.tumblr.com/blog/animal-crossing-letters", target: "_blank", children: "Tumblr" })
+      ] })
+    ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "footer-text", style: { textAlign: "right" }, children: [
       "Animal Crossing, characters, and images are property of Nintendo.",
       /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
@@ -23253,4 +23262,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-CmiY72Is.js.map
+//# sourceMappingURL=index-DcaLXsNP.js.map
