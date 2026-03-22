@@ -102,7 +102,7 @@ export const HOLIDAYS = {
     name: "Spring",
     start: { month: 2, day: 25 },
     end: { month: 5, day: 31 },
-    cards: []
+    cards: [CardName.FullBloom, CardName.CherryBlossoms, CardName.Dandelion]
   },
   Summer: {
     name: "Summer",
@@ -132,19 +132,19 @@ export const HOLIDAYS = {
     name: "Bunny Day",
     start: { month: 3, day: 15 },
     end: { month: 5, day: 10 },
-    cards: []
+    cards: [CardName.BunnyDay]
   },
   MothersDay: {
     name: "Mother's Day",
     start: { month: 5, day: 1 },
     end: { month: 5, day: 31 },
-    cards: []
+    cards: [CardName.MothersDay]
   },
   FathersDay: {
     name: "Father's Day",
     start: { month: 6, day: 1 },
     end: { month: 6, day: 30 },
-    cards: []
+    cards: [CardName.FathersDay]
   },
   Thanksgiving: {
     name: "Thanksgiving",

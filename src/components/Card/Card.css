@@ -215,6 +215,9 @@
 
 .bunny-day-card {
 	background-image: url("./backgrounds/Bunny_Day_Card_NH.webp");
+	--card-start-color: #6c524a;
+	--card-message-color: var(--card-start-color);
+	--card-signature-color: var(--card-start-color);
 }
 
 .carpet-of-leaves-card {
@@ -233,6 +236,9 @@
 
 .cherry-blossoms-card {
 	background-image: url("./backgrounds/Cherry-Blossoms_Card_NH.webp");
+	--card-start-color: #fb60a6;
+	--card-message-color: #913762;
+	--card-signature-color: var(--card-start-color);
 }
 
 .fluffy-clouds-card {
@@ -260,6 +266,9 @@
 
 .dandelion-card {
 	background-image: url("./backgrounds/Dandelion_Card_NH.webp");
+	--card-start-color: #217703;
+	--card-message-color: #f27625;
+	--card-signature-color: var(--card-start-color);
 }
 
 .dawning-year-card {
@@ -324,6 +333,9 @@
 
 .full-bloom-card {
 	background-image: url("./backgrounds/Full-Bloom_Card_NH.webp");
+	--card-start-color: #983f1c;
+	--card-message-color: #e06200;
+	--card-signature-color: var(--card-start-color);
 }
 
 .gears-card {

@@ -14,6 +14,7 @@ const backgroundColors: Record<string, string> = {
   [CardName.Hibiscus]: "rgb(243, 241, 242)",
   [CardName.TurkeyDay]: "rgb(216, 147, 1)",
   [CardName.WarmSweater]: "rgb(138, 1, 0)",
+  [CardName.BunnyDay]: "rgb(253, 251, 235)",
 }
 
 export default function Card({
