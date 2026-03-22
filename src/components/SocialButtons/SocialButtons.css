@@ -1,0 +1,18 @@
+.social-buttons {
+  position: fixed;
+  width: 60px;
+  bottom: 25px;
+  right: 20px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+  .social-buttons {
+    bottom: 15px;
+    right: 5px;
+    gap: 10px;
+  }
+}

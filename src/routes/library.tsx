@@ -1,7 +1,7 @@
 import PageTitle from "../components/PageTitle/PageTitle";
 import CardSelection from "../components/CardSelection/CardSelection";
 import Footer from "../components/Footer/Footer";
-import FloatingButton from "../components/FloatingButton/FloatingButton";
+import SocialButtons from "../components/SocialButtons/SocialButtons";
 
 export default function Library() {
   return (
@@ -10,7 +10,7 @@ export default function Library() {
       <div style={{ paddingTop: "30px" }}>
         <CardSelection />
         <Footer />
-        <FloatingButton />
+        <SocialButtons />
       </div>
     </>
   );
