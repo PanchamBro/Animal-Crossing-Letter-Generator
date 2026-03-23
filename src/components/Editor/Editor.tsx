@@ -165,12 +165,15 @@ export default function Editor({ cardType, shareMode: shareMode = false, startTe
       </div>
       {shareMode && (
         <div className="share-buttons">
-          <Button label="Follow on Bluesky" onClick={() => {
+          {/* <Button label="Follow on Bluesky" onClick={() => {
             window.open("https://bsky.app/profile/acmail.idreesinc.com", "_blank");
-          }} small={true} color="#59ace0" />
+          }} small={true} color="#59ace0" /> */}
+          <Button label="Follow on Instagram" onClick={() => {
+            window.open("https://www.instagram.com/animalcrossingletters", "_blank");
+          }} small={true} color="#eb6c7d" />
           <Button label="Follow on Tumblr" onClick={() => {
             window.open("https://www.tumblr.com/blog/animal-crossing-letters", "_blank");
-          }} small={true} color="#5688a8" />
+          }} small={true} color="#3c98d2" />
         </div>
       )}
     </div>
