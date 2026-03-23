@@ -16,9 +16,9 @@ export default function Footer() {
           Made with ❤️ by Idrees
         </a>
         <br/>
-        <span>Follow along on <a href="https://bsky.app/profile/acmail.idreesinc.com" target="_blank">Bluesky</a> or <a href="https://www.tumblr.com/blog/animal-crossing-letters" target="_blank">Tumblr</a></span>
-        <br />
-        <span>Get updates on <a href="https://bsky.app/profile/idreesinc.com" target="_blank">Bluesky</a> and <a href="https://www.instagram.com/idreesinc" target="_blank">Instagram</a></span>
+        <span>Follow along on <a href="https://bsky.app/profile/acmail.idreesinc.com" target="_blank">Bluesky</a>, <a href="https://www.tumblr.com/blog/animal-crossing-letters" target="_blank">Tumblr</a>, and <a href="https://www.instagram.com/animalcrossingletters" target="_blank">Instagram</a></span>
+        {/* <br /> */}
+        {/* <span>Get updates on <a href="https://bsky.app/profile/idreesinc.com" target="_blank">Bluesky</a> and <a href="https://www.instagram.com/idreesinc" target="_blank">Instagram</a></span> */}
       </div>
       <div className="footer-text" style={{ textAlign: "right" }}>
         Animal Crossing, characters, and images are property of Nintendo.

@@ -170,7 +170,7 @@ export default function Editor({ cardType, shareMode: shareMode = false, startTe
           }} small={true} color="#59ace0" /> */}
           <Button label="Follow on Instagram" onClick={() => {
             window.open("https://www.instagram.com/animalcrossingletters", "_blank");
-          }} small={true} color="#eb6c7d" />
+          }} small={true} color="#eb6c88" />
           <Button label="Follow on Tumblr" onClick={() => {
             window.open("https://www.tumblr.com/blog/animal-crossing-letters", "_blank");
           }} small={true} color="#3c98d2" />

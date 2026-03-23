@@ -1,11 +1,12 @@
 .floating-button {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background-size: cover;
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.25));
   transition: transform 0.2s, filter 0.2s;
   opacity: 0;
   animation: fadeIn 0.8s forwards 0.75s;
+  animation-delay: 2s;
 }
 
 @keyframes fadeIn {
