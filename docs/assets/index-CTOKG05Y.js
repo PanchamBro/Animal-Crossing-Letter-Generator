@@ -23280,4 +23280,4 @@ ReactDOM.createRoot(root).render(
     /* @__PURE__ */ jsxRuntimeExports.jsx(Waves, { type: "front" })
   ] })
 );
-//# sourceMappingURL=index-Ckq05Pbp.js.map
+//# sourceMappingURL=index-CTOKG05Y.js.map

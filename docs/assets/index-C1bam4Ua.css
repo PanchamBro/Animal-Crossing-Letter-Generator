@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Varela+Round&display=swap');
-
-.dialogue-page {
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Varela+Round&family=Noto+Emoji:wght@700&display=swap');.dialogue-page {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -222,7 +220,7 @@
 	filter: drop-shadow(0 10px 6px rgba(0, 0, 0, 0.15));
 	margin: 15px;
 	box-sizing: border-box;
-	font-family: "Seurat Pro B", "Varela Round", sans-serif;
+	font-family: "Seurat Pro B", "Varela Round", "Noto Emoji", sans-serif;
 	font-size: calc(36px * var(--card-scale));
 	letter-spacing: calc(3.5px * var(--card-scale));
 	line-height: 1.5;
@@ -943,11 +941,11 @@
 	.card-zoomable:hover {
 		transform: none !important;
 	}
-}@font-face {
+}
+@font-face {
   font-family: "Seurat Pro B";
   src: url("../fonts/FOT-Seurat_Pro_B.otf") format("opentype");
 }
-
 html,
 body,
 #root {
@@ -956,14 +954,12 @@ body,
   margin: 0;
   padding: 0;
 }
-
 html {
   background: linear-gradient(to bottom, #a8e063, rgb(255, 236, 185), #A1FFCE, #0ED2F7);
   background: linear-gradient(to top, rgb(255, 236, 185), #A1FFCE, #0ED2F7);
   background: linear-gradient(to top, rgb(255, 236, 185), #A1FFCE, #0ED2F7);
   background-attachment: fixed;
 }
-
 .page {
   width: 100%;
   height: 100%;
