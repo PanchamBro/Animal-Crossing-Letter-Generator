@@ -98,28 +98,44 @@ export const DEFAULT_STATIONARY = [
 ];
 
 export const HOLIDAYS = {
-    Spring: {
+  Spring: {
     name: "Spring",
-    start: { month: 2, day: 25 },
-    end: { month: 5, day: 31 },
+    start_nh: { month: 2, day: 25 },
+    end_nh: { month: 5, day: 31 },
+    start_sh { month: 8, day: 25 },
+    end_sh: { month: 11, day: 30 },
     cards: [CardName.FullBloom, CardName.CherryBlossoms, CardName.Dandelion]
+  },
+  Hibiscus: {
+    name: "Summer",
+    start_nh: { month: 5, day: 1 },
+    end_nh: { month: 9, day: 15 },
+    start_sh: { month: 11, day: 1 },
+    end_sh: { month: 3, day: 15},
+    cards: [CardName.Hibiscus]
   },
   Summer: {
     name: "Summer",
-    start: { month: 5, day: 1 },
-    end: { month: 8, day: 31 },
-    cards: [CardName.FluffyClouds, CardName.Beach, CardName.Hibiscus]
+    start_nh: { month: 6, day: 1 },
+    end_nh: { month: 8, day: 31 },
+    start_sh: { month: 12, day: 1 },
+    end_sh: { month: 2, day: 29 },
+    cards: [CardName.FluffyClouds, CardName.Beach]
   },
   Fall: {
     name: "Fall",
-    start: { month: 9, day: 1 },
-    end: { month: 11, day: 25 },
+    start_nh: { month: 9, day: 1 },
+    end_nh: { month: 11, day: 25 },
+    start_sh: { month: 3, day: 1 },
+    end_sh: { month: 5, day: 25 },
     cards: [CardName.Acorn, CardName.Mushroom, CardName.CarpetOfLeaves]
   },
   Winter: {
     name: "Winter",
-    start: { month: 11, day: 26 },
-    end: { month: 2, day: 24 },
+    start_nh: { month: 11, day: 26 },
+    end_nh: { month: 2, day: 24 },
+    start_sh: { month: 5, day: 26 },
+    end_sh: { month: 8, day: 24 },
     cards: [CardName.WinterCamellia, CardName.Snowflake, CardName.Snowperson, CardName.TownView]
   },
   ValentinesDay: {
