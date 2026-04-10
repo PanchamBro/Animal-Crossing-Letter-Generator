@@ -102,7 +102,7 @@ export const HOLIDAYS = {
     name: "Spring",
     start_nh: { month: 2, day: 25 },
     end_nh: { month: 5, day: 31 },
-    start_sh { month: 8, day: 25 },
+    start_sh: { month: 8, day: 25 },
     end_sh: { month: 11, day: 30 },
     cards: [CardName.FullBloom, CardName.CherryBlossoms, CardName.Dandelion]
   },
